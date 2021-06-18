@@ -7,7 +7,7 @@
     <title>Ingresar datos</title>
   </head>
   <body>
-    <?php
+   <?php
         if($_GET['error']){
           echo "<h5>". $_GET['error'] ."</h5>";
         }
@@ -51,11 +51,11 @@
             <br/>
             <br/>
             <label for="costoA">Ingrese el costo por asignatura </label>
-            <input type="number" name="costoA" id="costoA" required/>
+            <input type="number" step="any" name="costoA" id="costoA" required/>
             <br/>
             <br/>
             <label for="costoM">Ingrese el costo de la matricula</label>
-            <input type="number" name="costoM" id="costoM" required/>
+            <input type="number" step="any" name="costoM" id="costoM" required/>
             <br/>
             <br/>
 
