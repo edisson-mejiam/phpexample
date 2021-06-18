@@ -7,7 +7,7 @@
       $edad = intval($_REQUEST['edad']);
       $cadena = "insert into `Profesores`( `nombres`, `apellidos`,`titulo`, 
         `edad`) values ('%s', '%s', '%s', %d);"; 
-      $cadena = sprintf($nombres, $apellidos, $titulo, $edad);
+      $cadena = sprintf($cadena, $nombres, $apellidos, $titulo, $edad);
       echo $cadena;
       $consultaBD = $conectaBD -> query($cadena);
       

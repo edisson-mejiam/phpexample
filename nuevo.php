@@ -23,7 +23,7 @@
             <input type="text" name="apellidosP" id="apellidosP" required/>
             <br/>
             <br/>
-            <label for="titulo">Ingrese el titulo del profesor< label>
+            <label for="titulo">Ingrese el titulo del profesor <label>
             <input type="text" name="titulo" id="titulo" required/>
             <br/>
             <br/>
