@@ -33,7 +33,7 @@
         echo sprintf($formato, convertirMayuscula($registro['nombres']), 
           convertirMayuscula($registro['apellidos']),
           convertirMayuscula($registro['titulo']),
-          convertirMayuscula($registro['edad']), 
+          convertirMayuscula($registro['edad'])); 
           
       }
     ?>
