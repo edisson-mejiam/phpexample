@@ -39,6 +39,33 @@
     ?>
     </table>
     <a href="nuevo.php">Nuevo Profesor</a>
-    
+    <h3>Listado de estudiantes modalidad semipresencial</h3>
+    <table>
+    <tr>
+        <td>Nombres</td>
+        <td>Apellidos</td>
+        <td>Nro de asignaturas</td>
+        <td>costo por asignatura</td>
+        <td>costo Matricula</td>
+    </tr>
+    <?php
+      include("basedatos.php");
+   
+      // se realizar la consulta a la base de datos
+      $consultaBD = $conectaBD -> query("Select * from Estudiantes_Semipresencial");
+      while($registro = $consultaBD -> fetch_array(MYSQLI_ASSOC)){
+        $formato = "<tr>
+          <td>%s</td><td>%s</td><td>%d</td><td>%f</td><td>%f</td>
+          </tr>";
+        // se agrega una fila a la tabla HTML
+        echo sprintf($formato, convertirMayuscula($registro['nombres']), 
+          convertirMayuscula($registro['apellidos']),
+          convertirMayuscula($registro['nro_asignaturas']),
+          convertirMayuscula($registro['costo_asignatura']), 
+          convertirMayuscula($registro['costo_matricula']));
+      }
+    ?>
+    </table>
+    <a href="nuevo.php">Nuevo Estudiante Semipresencial</a>
   </body>
 </html>
