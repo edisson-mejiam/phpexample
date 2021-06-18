@@ -38,7 +38,7 @@
       }
     ?>
     </table>
-    <a href="nuevo.php">Nuevo Profesor</a>
+    <a href="agregarDatos.php">Nuevo Profesor</a>
     <h3>Listado de estudiantes modalidad semipresencial</h3>
     <table>
     <tr>
@@ -66,6 +66,6 @@
       }
     ?>
     </table>
-    <a href="nuevo.php">Nuevo Estudiante Semipresencial</a>
+    <a href="agregarDatos.php">Nuevo Estudiante Semipresencial</a>
   </body>
 </html>
