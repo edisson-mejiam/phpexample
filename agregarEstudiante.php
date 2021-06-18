@@ -8,7 +8,7 @@
       $costoM = intval($_REQUEST['costoM']);
       $cadena = "insert into `Estudiantes_Semipresencial`( `nombres`, `apellidos`,`nro_asignaturas`, 
         `costo_asignatura`, `costo_matricula`) values ('%s', '%s', %d, %f, %f);"; 
-      $cadena = sprintf($nombres, $apellidos, $nro_asignaturas, $costoA, $costoM);
+      $cadena = sprintf($cadena, $nombres, $apellidos, $nro_asignaturas, $costoA, $costoM);
       echo $cadena;
       $consultaBD = $conectaBD -> query($cadena);
       
